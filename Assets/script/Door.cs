@@ -5,7 +5,7 @@ using UnityEngine;
 public class Door : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Player") {
-            Debug.Log(other.name + " fait plop");
+            GetComponent<Animator>().enabled = true;
         }
     }
 }
