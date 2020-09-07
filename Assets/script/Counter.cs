@@ -22,6 +22,6 @@ public class Counter : MonoBehaviour {
             txtCounter.text = "TimeLeft : " + startCounter;
         }
 
-        Debug.Log("You are dead");
+        GameObject.Find("Player").GetComponent<PlayerController>().GameOver();
     }
 }
